@@ -2,7 +2,11 @@
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
 
+<<<<<<< HEAD
 title: "PATM1 Server - Data Center"
+=======
+title: "PATM1 Server"
+>>>>>>> d68437f (Upload)
 subtitle: "Sylvania, Ohio"
 logo: "assets/tools/logo.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
@@ -204,6 +208,7 @@ services:
         url: "https://admin-9965a3ae.duosecurity.com/"
         target: "_self" # optional html a tag target attribute
 
+<<<<<<< HEAD
       - name: "Github"
         logo: "assets/tools/github-mark.png"
         subtitle: "Github Repo"
@@ -212,6 +217,8 @@ services:
         url: "https://github.com/patmONE?tab=repositories"
         target: "_self" # optional html a tag target attribute
 
+=======
+>>>>>>> d68437f (Upload)
       - name: "patm1.com Admin"
         logo: "assets/tools/web-admin.png"
         subtitle: "patm1.com Admin"
@@ -247,6 +254,7 @@ services:
   - name: "Services"
     icon: "fas fa-cloud"
     items:
+<<<<<<< HEAD
 
 
       - name: "Portainer 2"
@@ -265,6 +273,22 @@ services:
         tag: "service"
         keywords: "Rancher Kubernetes Server 2"
         url: "https://10.200.0.67/dashboard/c/c-m-zb78nd56/explorer#cluster-events"
+=======
+      - name: "Portainer 1"
+        logo: "assets/tools/portainer.png"
+        subtitle: "Docker Portainer Server 1"
+        tag: "service"
+        keywords: "Docker Portainer Server 1"
+        url: "http://10.130.0.91:9000/#!/2/docker/dashboard"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "Portainer 3"
+        logo: "assets/tools/portainer.png"
+        subtitle: "Docker Portainer Server 3"
+        tag: "service"
+        keywords: "Docker Portainer Server 3"
+        url: "http://10.130.5.93:9000/#!/2/docker/dashboard"
+>>>>>>> d68437f (Upload)
         target: "_self" # optional html a tag target attribute
 
       - name: "Windows Server Admin Center"
