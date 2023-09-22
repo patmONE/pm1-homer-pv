@@ -1,0 +1,288 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/v5/search for icons options
+
+title: "PATM1 Server"
+subtitle: "Sylvania, Ohio"
+logo: "assets/tools/logo.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+footer: '<p>PATM1.COM Fuck this night!</p>' # set false if you want to hide it.
+
+# Optional theme customization
+theme: default
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+# Optional message
+#message:
+  #url: https://b4bz.io
+#  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+#  title: "Demo !"
+#  icon: "fa fa-grin"
+#  content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "patm1.com"
+    icon: "fas fa-book"
+    url: "https://patm1.com"
+    target: "_self" # optional html a tag target attribute
+
+  - name: "cpudetective.com"
+    icon: "fas fa-book"
+    url: "https://cpudetective.com"
+    target: "_self"
+
+  - name: "alphabrainboost.com"
+    icon: "fas fa-book"
+    url: "https://alphabrainboost.com"
+    target: "_self" # optional html a tag target attribute
+
+  - name: "mindshockcentral.com"
+    icon: "fas fa-book"
+    url: "https://mindshockcentral.com"
+    target: "_self"
+
+  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+  # see url field and assets/additional-page.yml.dist used in this example:
+  #- name: "another page!"
+  #  icon: "fas fa-file-alt"
+  #  url: "#additional-page" 
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Network"
+    icon: "fas fa-cloud"
+    items:
+      - name: "PFSense VIP"
+        logo: "assets/tools/pfsense.png"
+        subtitle: "PFSense VIP"
+        tag: "firewall"
+        keywords: "PFSense VIP"
+        url: "http://10.130.0.15"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "PFSense HV1"
+        logo: "assets/tools/pfsense.png"
+        subtitle: "PFSense HV1"
+        tag: "firewall"
+        keywords: "PFSense HV1"
+        url: "http://10.130.0.1"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "PFSense HV2"
+        logo: "assets/tools/pfsense.png"
+        subtitle: "PFSense HV2"
+        tag: "firewall"
+        keywords: "PFSense HV2"
+        url: "http://10.130.0.2"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "R700 WIFI AP"
+        logo: "assets/tools/wifi.png"
+        subtitle: "Wireless AP"
+        tag: "ap"
+        keywords: "R700 WIFI AP"
+        url: "http://10.130.0.5"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "ISP Router"
+        logo: "assets/tools/isp.png"
+        subtitle: "ISP Router"
+        tag: "router"
+        keywords: "ISP Router"
+        url: "http://192.168.0.1"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "PI-Hole 1"
+        logo: "assets/tools/pihole.png"
+        subtitle: "PI-Hole 1 DNS"
+        tag: "dns"
+        keywords: "PI-Hole 1 DNS"
+        url: "http://10.130.0.31/admin"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "PI-Hole 2"
+        logo: "assets/tools/pihole.png"
+        subtitle: "PI-Hole 2 DNS"
+        tag: "dns"
+        keywords: "PI-Hole 2 DNS"
+        url: "http://10.130.0.32/admin"
+        target: "_self" # optional html a tag target attribute
+
+  - name: "Office 365"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Outlook"
+        logo: "assets/tools/outlook.png"
+        subtitle: "Microsoft Outlook E-mail"
+        tag: "m365"
+        keywords: "Microsoft Outlook E-mail"
+        url: "https://outlook.office.com/mail/"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "Onenote"
+        logo: "assets/tools/onenote.png"
+        subtitle: "Microsoft Onenote"
+        tag: "m365"
+        keywords: "Microsoft Onenote"
+        url: "https://patmone.sharepoint.com/:o:/r/sites/patm1/_layouts/15/Doc.aspx?sourcedoc=%7B8D0E6F03-606E-45B3-8FFC-93BDD9F560B1%7D&file=patm1%20Notebook&action=edit&mobileredirect=true&wdorigin=Sharepoint"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "Teams"
+        logo: "assets/tools/teams.png"
+        subtitle: "Microsoft Teams"
+        tag: "m365"
+        keywords: "Microsoft Teams"
+        url: "https://teams.microsoft.com/_#/conversations/19:36d7837a-8253-4bd5-ab16-af5626f9eb86_d2bbde55-8ff3-4e7e-9c22-c3de30be0828@unq.gbl.spaces?ctx=chat"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "Sharepoint"
+        logo: "assets/tools/sharepoint.png"
+        subtitle: "Microsoft Sharepoint"
+        tag: "m365"
+        keywords: "Microsoft Sharepoint"
+        url: "https://patmone.sharepoint.com/sites/patm1"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "Microsoft Admin Center"
+        logo: "assets/tools/m365.png"
+        subtitle: "Microsoft Admin Center"
+        tag: "m365 admin"
+        keywords: "Microsoft Admin Center"
+        url: "https://admin.microsoft.com/"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "Microsoft Admin Center"
+        logo: "assets/tools/m365-security.png"
+        subtitle: "Microsoft Security Admin Center"
+        tag: "m365 admin"
+        keywords: "Microsoft Security Admin Center"
+        url: "https://admin.microsoft.com/"
+        target: "_self" # optional html a tag target attribute
+
+
+  - name: "Web Admin"
+    icon: "fas fa-cloud"
+    items:
+
+      - name: "Duo Admin"
+        logo: "assets/tools/duo.png"
+        subtitle: "Duo Security Admin"
+        tag: "web admin"
+        keywords: "Duo Security Admin"
+        url: "https://admin-9965a3ae.duosecurity.com/"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "patm1.com Admin"
+        logo: "assets/tools/web-admin.png"
+        subtitle: "patm1.com Admin"
+        tag: "web admin"
+        keywords: "patm1.com Admin"
+        url: "http://patm1.com/wp-admin/"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "cpudetective.com Admin"
+        logo: "assets/tools/web-admin.png"
+        subtitle: "cpudetective.com Admin"
+        tag: "web admin"
+        keywords: "cpudetective.com Admin"
+        url: "https://cpudetective.com/wp-admin"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "alphabrainboost.com Admin"
+        logo: "assets/tools/web-admin.png"
+        subtitle: "alphabrainboost.com Admin"
+        tag: "web admin"
+        keywords: "alphabrainboost.com Admin"
+        url: "https://alphabrainboost.com/wp-admin/"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "mindshockcentral.com Admin"
+        logo: "assets/tools/web-admin.png"
+        subtitle: "mindshockcentral.com Admin"
+        tag: "web admin"
+        keywords: "mindshockcentral.com Admin"
+        url: "https://mindshockcentral.com/wp-admin/"
+        target: "_self" # optional html a tag target attribute
+
+  - name: "Services"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Portainer 1"
+        logo: "assets/tools/portainer.png"
+        subtitle: "Docker Portainer Server 1"
+        tag: "service"
+        keywords: "Docker Portainer Server 1"
+        url: "http://10.130.0.91:9000/#!/2/docker/dashboard"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "Portainer 3"
+        logo: "assets/tools/portainer.png"
+        subtitle: "Docker Portainer Server 3"
+        tag: "service"
+        keywords: "Docker Portainer Server 3"
+        url: "http://10.130.5.93:9000/#!/2/docker/dashboard"
+        target: "_self" # optional html a tag target attribute
+
+      - name: "Windows Server Admin Center"
+        logo: "assets/tools/m365.png"
+        subtitle: "Windows Server Admin Center"
+        tag: "service"
+        keywords: "Windows Server Admin Center"
+        url: "https://pm1-w22ac-3.patm1.local/"
+        109target: "_self" # optional html a tag target attribute
+
+      - name: "Uptime Kuma"
+        logo: "assets/tools/uptime-kuma.png"
+        subtitle: "Uptime Kuma"
+        tag: "service"
+        keywords: "Uptime-Kuma"
+        url: "http://10.130.0.91:3001"
+        109target: "_self" # optional html a tag target attribute
+
+      - name: "Qbittorent"
+        logo: "assets/tools/qbittorrent.png"
+        subtitle: "Qbittorent"
+        tag: "service"
+        keywords: "Qbittorent"
+        url: "http://10.130.0.91:8080/"
+        109target: "_self" # optional html a tag target attribute
+
+      - name: "Image AI"
+        logo: "assets/tools/uptime-kuma.png"
+        subtitle: "Image Artificial Intelligence"
+        tag: "service"
+        keywords: "Image Artificial Intelligence"
+        url: "https://discord.com/channels/1135297614254985327/1135333928522227872"
+        109target: "_self" # optional html a tag target attribute
