@@ -204,6 +204,14 @@ services:
         url: "https://admin-9965a3ae.duosecurity.com/"
         target: "_self" # optional html a tag target attribute
 
+      - name: "Github"
+        logo: "assets/tools/github-mark.png"
+        subtitle: "Github Repo"
+        tag: "github"
+        keywords: "Github"
+        url: "https://github.com/patmONE?tab=repositories"
+        target: "_self" # optional html a tag target attribute
+
       - name: "patm1.com Admin"
         logo: "assets/tools/web-admin.png"
         subtitle: "patm1.com Admin"
