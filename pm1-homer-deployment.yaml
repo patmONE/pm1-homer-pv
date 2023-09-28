@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pm1-homer-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pm1-homer
+  template:
+    metadata:
+      labels:
+        app: pm1-homer
+    spec:
+      containers:
+      - name: pm1-homer-container
+        image: patm1/pm1-homer:latest
+        ports:
+        - containerPort: 8080

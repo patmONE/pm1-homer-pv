@@ -2,7 +2,7 @@
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
 
-title: "PATM1 Server"
+title: "PATM1 Server - Data Center"
 subtitle: "Sylvania, Ohio"
 logo: "assets/tools/logo.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
@@ -247,20 +247,24 @@ services:
   - name: "Services"
     icon: "fas fa-cloud"
     items:
-      - name: "Portainer 1"
+
+
+      - name: "Portainer 2"
         logo: "assets/tools/portainer.png"
-        subtitle: "Docker Portainer Server 1"
+        subtitle: "Docker Portainer Server 2"
         tag: "service"
-        keywords: "Docker Portainer Server 1"
-        url: "http://10.130.0.91:9000/#!/2/docker/dashboard"
+        keywords: "Docker Portainer Server 2"
+        url: "http://10.200.0.67:9000/#!/2/docker/dashboard"
         target: "_self" # optional html a tag target attribute
 
-      - name: "Portainer 3"
-        logo: "assets/tools/portainer.png"
-        subtitle: "Docker Portainer Server 3"
+
+
+      - name: "Rancher 2"
+        logo: "assets/tools/rancher-suse-logo-horizontal-black.png"
+        subtitle: "Rancher Kubernetes Server 2"
         tag: "service"
-        keywords: "Docker Portainer Server 3"
-        url: "http://10.130.5.93:9000/#!/2/docker/dashboard"
+        keywords: "Rancher Kubernetes Server 2"
+        url: "https://10.200.0.67/dashboard/c/c-m-zb78nd56/explorer#cluster-events"
         target: "_self" # optional html a tag target attribute
 
       - name: "Windows Server Admin Center"
