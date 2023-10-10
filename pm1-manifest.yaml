@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pm1-azure-homer-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pm1-azure-homer
+  template:
+    metadata:
+      labels:
+        app: pm1-azure-homer
+    spec:
+      containers:
+      - name: pm1-azure-homer-container
+        image: pm1azure.azurecr.io/pm1-azure-homer-image:v3
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pm1-azure-homer-service
+spec:
+  selector:
+    app: pm1-azure-homer
+  ports:
+  - protocol: TCP
+    port: 80  # This is the port inside the container. Adjust if your application listens on a different port.
+    targetPort: 80
+  type: NodePort
