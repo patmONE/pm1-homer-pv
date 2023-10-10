@@ -1,12 +1,7 @@
----
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
 
-<<<<<<< HEAD
 title: "PATM1 Server - Data Center"
-=======
-title: "PATM1 Server"
->>>>>>> d68437f (Upload)
 subtitle: "Sylvania, Ohio"
 logo: "assets/tools/logo.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
@@ -46,7 +41,7 @@ colors:
 
 # Optional message
 #message:
-  #url: https://b4bz.io
+#url: https://b4bz.io
 #  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
 #  title: "Demo !"
 #  icon: "fa fa-grin"
@@ -75,11 +70,11 @@ links:
     url: "https://mindshockcentral.com"
     target: "_self"
 
-  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
-  # see url field and assets/additional-page.yml.dist used in this example:
-  #- name: "another page!"
-  #  icon: "fas fa-file-alt"
-  #  url: "#additional-page" 
+# this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+# see url field and assets/additional-page.yml.dist used in this example:
+#- name: "another page!"
+#  icon: "fas fa-file-alt"
+#  url: "#additional-page"
 
 # Services
 # First level array represent a group.
@@ -187,7 +182,7 @@ services:
         url: "https://admin.microsoft.com/"
         target: "_self" # optional html a tag target attribute
 
-      - name: "Microsoft Admin Center"
+      - name: "Microsoft Security Admin Center"
         logo: "assets/tools/m365-security.png"
         subtitle: "Microsoft Security Admin Center"
         tag: "m365 admin"
@@ -195,11 +190,9 @@ services:
         url: "https://admin.microsoft.com/"
         target: "_self" # optional html a tag target attribute
 
-
   - name: "Web Admin"
     icon: "fas fa-cloud"
     items:
-
       - name: "Duo Admin"
         logo: "assets/tools/duo.png"
         subtitle: "Duo Security Admin"
@@ -208,7 +201,6 @@ services:
         url: "https://admin-9965a3ae.duosecurity.com/"
         target: "_self" # optional html a tag target attribute
 
-<<<<<<< HEAD
       - name: "Github"
         logo: "assets/tools/github-mark.png"
         subtitle: "Github Repo"
@@ -217,8 +209,6 @@ services:
         url: "https://github.com/patmONE?tab=repositories"
         target: "_self" # optional html a tag target attribute
 
-=======
->>>>>>> d68437f (Upload)
       - name: "patm1.com Admin"
         logo: "assets/tools/web-admin.png"
         subtitle: "patm1.com Admin"
@@ -254,26 +244,6 @@ services:
   - name: "Services"
     icon: "fas fa-cloud"
     items:
-<<<<<<< HEAD
-
-
-      - name: "Portainer 2"
-        logo: "assets/tools/portainer.png"
-        subtitle: "Docker Portainer Server 2"
-        tag: "service"
-        keywords: "Docker Portainer Server 2"
-        url: "http://10.200.0.67:9000/#!/2/docker/dashboard"
-        target: "_self" # optional html a tag target attribute
-
-
-
-      - name: "Rancher 2"
-        logo: "assets/tools/rancher-suse-logo-horizontal-black.png"
-        subtitle: "Rancher Kubernetes Server 2"
-        tag: "service"
-        keywords: "Rancher Kubernetes Server 2"
-        url: "https://10.200.0.67/dashboard/c/c-m-zb78nd56/explorer#cluster-events"
-=======
       - name: "Portainer 1"
         logo: "assets/tools/portainer.png"
         subtitle: "Docker Portainer Server 1"
@@ -288,7 +258,6 @@ services:
         tag: "service"
         keywords: "Docker Portainer Server 3"
         url: "http://10.130.5.93:9000/#!/2/docker/dashboard"
->>>>>>> d68437f (Upload)
         target: "_self" # optional html a tag target attribute
 
       - name: "Windows Server Admin Center"
@@ -297,7 +266,7 @@ services:
         tag: "service"
         keywords: "Windows Server Admin Center"
         url: "https://pm1-w22ac-3.patm1.local/"
-        109target: "_self" # optional html a tag target attribute
+        target: "_self" # optional html a tag target attribute
 
       - name: "Uptime Kuma"
         logo: "assets/tools/uptime-kuma.png"
@@ -305,7 +274,7 @@ services:
         tag: "service"
         keywords: "Uptime-Kuma"
         url: "http://10.130.0.91:3001"
-        109target: "_self" # optional html a tag target attribute
+        target: "_self" # optional html a tag target attribute
 
       - name: "Qbittorent"
         logo: "assets/tools/qbittorrent.png"
@@ -313,7 +282,7 @@ services:
         tag: "service"
         keywords: "Qbittorent"
         url: "http://10.130.0.91:8080/"
-        109target: "_self" # optional html a tag target attribute
+        target: "_self" # optional html a tag target attribute
 
       - name: "Image AI"
         logo: "assets/tools/uptime-kuma.png"
@@ -321,4 +290,4 @@ services:
         tag: "service"
         keywords: "Image Artificial Intelligence"
         url: "https://discord.com/channels/1135297614254985327/1135333928522227872"
-        109target: "_self" # optional html a tag target attribute
+        target: "_self" # optional html a tag target attribute

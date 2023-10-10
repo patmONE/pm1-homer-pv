@@ -1,0 +1,60 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pm1-homer-namespace
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pm1-homer-longhorn-pvc
+  namespace: pm1-homer-namespace
+spec:
+  storageClassName: longhorn
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pm1-homer-deployment
+  namespace: pm1-homer-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pm1-homer
+  template:
+    metadata:
+      labels:
+        app: pm1-homer
+    spec:
+      containers:
+      - name: homer
+        image: patm1/pm1-homer:latest
+        ports:
+        - containerPort: 8080
+        # volumeMounts:
+        # # - name: config
+        #   mountPath: /www/assets/
+      # volumes:
+      # - name: config
+      #   persistentVolumeClaim:
+      #     claimName: pm1-homer-longhorn-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pm1-homer-service
+  namespace: pm1-homer-namespace
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 8080
+    nodePort: 30080
+  selector:
+    app: pm1-homer

@@ -4,8 +4,10 @@ services:
     image: b4bz/homer:latest
     container_name: pm1-homer-3
     volumes:
-      - /home/administrator/PM1-DOCKER-3/pm1-homer-3/config.yml:/www/config.yml
-      - /home/administrator/PM1-DOCKER-3/pm1-homer-3:/www/assets
+      # - /home/administrator/PM1-DOCKER-3/pm1-homer-3/config.yml:/www/config.yml
+      # - /home/administrator/PM1-DOCKER-3/pm1-homer-3:/www/assets
+      - /home/administrator/pm1-kubernetes/pm1-github/pm1-homer/config.yml:/www/assets/config.yml
+      - /home/administrator/pm1-kubernetes/pm1-github/pm1-homer/assets:/www/assets
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - 86:8080
